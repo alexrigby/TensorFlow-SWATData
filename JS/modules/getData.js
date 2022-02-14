@@ -40,8 +40,8 @@ export async function getOutputNames() {
 //FETCHES OBSERVED FLOW DATA AND REMOVES DATE 
 export async function getObservedFlow() {
 
-    const flowData = await fetchData("data/Erch_dly_flo.csv");
-    // const flowData = await fetchData("./Cefni_dly_flow.csv");
+    const flowData = await fetchData("data/Dwyfor_dly_flow.csv");
+    // const flowData = await fetchData("./Erch_dly_flow.csv");
     // const flowData = await fetchData("./swatData.csv");
     const clean = cleanObservedCsvOutput(flowData)
 
